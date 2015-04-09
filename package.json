@@ -1,0 +1,35 @@
+{
+  "name": "passport-windows-live-token",
+  "version": "1.0.0",
+  "description": "Passport strategy for authenticating with Windows Live via OAuth2 access tokens",
+  "main": "index.js",
+  "scripts": {
+    "test": "istanbul cover _mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ghaiklor/passport-windows-live-token.git"
+  },
+  "keywords": [
+    "passport",
+    "windows-live",
+    "token",
+    "auth",
+    "authentication"
+  ],
+  "author": "ghaiklor",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ghaiklor/passport-windows-live-token/issues"
+  },
+  "homepage": "https://github.com/ghaiklor/passport-windows-live-token",
+  "devDependencies": {
+    "chai": "^2.2.0",
+    "chai-passport-strategy": "^0.2.0",
+    "istanbul": "^0.3.13",
+    "mocha": "^2.2.4"
+  },
+  "dependencies": {
+    "passport-oauth": "^1.0.0"
+  }
+}
