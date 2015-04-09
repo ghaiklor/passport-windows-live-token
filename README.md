@@ -21,7 +21,7 @@ The Windows Live authentication strategy authenticates users using a Windows Liv
 The strategy requires a `verify` callback, which accepts these credentials and calls `next` providing a user, as well as `options` specifying a app ID and app secret.
 
 ```javascript
-passport.use(new Windows LiveTokenStrategy({
+passport.use(new WindowsLiveTokenStrategy({
     clientID: WINDOWS_LIVE_CLIENT_ID,
     clientSecret: WINDOWS_LIVE_CLIENT_SECRET,
     passReqToCallback: true
@@ -47,7 +47,7 @@ Or if you are using Sails framework:
 ```javascript
 // AuthController.js
 module.exports = {
-    windows_live: function(req, res) {
+    'windows-live': function(req, res) {
         passport.authenticate('windows-live-token', function(error, user, info) {
             if (error) return res.serverError(error);
             if (info) return res.unauthorized(info);
