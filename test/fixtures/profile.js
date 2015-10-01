@@ -1,4 +1,4 @@
-{
+export default JSON.stringify({
   "id": "8c8ce076ca27823f",
   "name": "Roberto Tamburello",
   "first_name": "Roberto",
@@ -50,4 +50,4 @@
   },
   "locale": "en_US",
   "updated_time": "2011-04-21T23:55:34+0000"
-}
+})
