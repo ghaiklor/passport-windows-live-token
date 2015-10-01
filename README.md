@@ -1,6 +1,12 @@
 # passport-windows-live-token
 
-![Build Status](https://img.shields.io/travis/ghaiklor/passport-windows-live-token.svg) ![Coverage](https://img.shields.io/coveralls/ghaiklor/passport-windows-live-token.svg) ![Downloads](https://img.shields.io/npm/dm/passport-windows-live-token.svg) ![npm version](https://img.shields.io/npm/v/passport-windows-live-token.svg) ![dependencies](https://img.shields.io/david/ghaiklor/passport-windows-live-token.svg) ![dev dependencies](https://img.shields.io/david/dev/ghaiklor/passport-windows-live-token.svg) ![License](https://img.shields.io/npm/l/passport-windows-live-token.svg)
+![Build Status](https://img.shields.io/travis/ghaiklor/passport-windows-live-token.svg)
+![Coverage](https://img.shields.io/coveralls/ghaiklor/passport-windows-live-token.svg)
+![Downloads](https://img.shields.io/npm/dm/passport-windows-live-token.svg)
+![npm version](https://img.shields.io/npm/v/passport-windows-live-token.svg)
+![dependencies](https://img.shields.io/david/ghaiklor/passport-windows-live-token.svg)
+![dev dependencies](https://img.shields.io/david/dev/ghaiklor/passport-windows-live-token.svg)
+![License](https://img.shields.io/npm/l/passport-windows-live-token.svg)
 
 [Passport](http://passportjs.org/) strategy for authenticating with Windows Live access tokens using the OAuth 2.0 API.
 
@@ -57,7 +63,11 @@ module.exports = {
 };
 ```
 
-The POST request to this route should include a JSON object with the keys `access_token` and optionally, `refresh_token` set to the credentials you receive from Windows Live.
+The request to this route should include a GET or POST data with the keys `access_token` and optionally, `refresh_token` set to the credentials you receive from Windows Live.
+
+```
+GET /auth/windows-live?access_token=<TOKEN>
+```
 
 ## Issues
 
