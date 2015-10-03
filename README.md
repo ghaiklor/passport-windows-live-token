@@ -3,6 +3,7 @@
 ![Build Status](https://img.shields.io/travis/ghaiklor/passport-windows-live-token.svg)
 ![Coverage](https://img.shields.io/coveralls/ghaiklor/passport-windows-live-token.svg)
 ![Downloads](https://img.shields.io/npm/dm/passport-windows-live-token.svg)
+![Downloads](https://img.shields.io/npm/dt/passport-windows-live-token.svg)
 ![npm version](https://img.shields.io/npm/v/passport-windows-live-token.svg)
 ![dependencies](https://img.shields.io/david/ghaiklor/passport-windows-live-token.svg)
 ![dev dependencies](https://img.shields.io/david/dev/ghaiklor/passport-windows-live-token.svg)
@@ -27,6 +28,8 @@ The Windows Live authentication strategy authenticates users using a Windows Liv
 The strategy requires a `verify` callback, which accepts these credentials and calls `next` providing a user, as well as `options` specifying a app ID and app secret.
 
 ```javascript
+var WindowsLiveTokenStrategy = require('passport-windows-live-token');
+
 passport.use(new WindowsLiveTokenStrategy({
     clientID: WINDOWS_LIVE_CLIENT_ID,
     clientSecret: WINDOWS_LIVE_CLIENT_SECRET,
